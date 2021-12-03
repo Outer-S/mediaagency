@@ -4,8 +4,8 @@
 $white: #ffffff;
 $black: #080808;
 $agencyblue: #1877f2;
-$orange: #fc3d03;
-$orangina: #fc6a03;
+$orange: #710193e7;
+$orangina: #af69ef;
 
 // Flex direction : row
 @mixin flexrow {
@@ -53,7 +53,7 @@ $orangina: #fc6a03;
     // change hover to active later
     &:hover {
       font-weight: bolder;
-      border-bottom: 5px solid $orangina;
+      border-bottom: 5px solid $orange;
     }
     //
   }

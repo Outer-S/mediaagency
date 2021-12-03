@@ -9,8 +9,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  animation: slideSideBar 1s ease-in-out;
-  transition: 1s all ease;
+  animation: slideSideBar 0.7s ease-in-out;
+  transition: 0.7s all ease;
 }
 
 .close-icon {
@@ -34,7 +34,7 @@
   a {
     font-size: 1.4rem;
     &:hover {
-      color: #fc6a03;
+      color: #af69ef;
     }
     transition: 0.5s all ease-in-out;
   }
@@ -59,10 +59,8 @@
 @keyframes slideSideBar {
   0% {
     right: -500px;
-    top: 0;
   }
   100% {
     right: 0;
-    top: 0;
   }
 }
