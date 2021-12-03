@@ -14,5 +14,10 @@ li {
   list-style: none;
 }
 
+.none {
+  display: none;
+}
+
+@import "_Variables.scss";
 @import "_NavBar.scss";
 @import "_SideBarMenu.scss";

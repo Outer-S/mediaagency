@@ -13,12 +13,10 @@ $catalinablue: #294874;
   align-items: center;
 }
 
-//
-
 .navbar-container {
   @include flexrow();
   justify-content: space-between;
-  background-color: $black;
+  background-color: #080808f8;
   height: 10vh;
   width: 100%;
   padding: 0 25px;
@@ -26,9 +24,8 @@ $catalinablue: #294874;
   position: sticky;
   top: 0;
   z-index: 10;
-
+  transition: 0.5s all ease-in-out;
   @media screen and (max-width: 830px) {
-    transition: 0.8s all ease;
   }
 }
 
@@ -44,7 +41,7 @@ $catalinablue: #294874;
   @include flexrow();
   text-align: center;
   justify-content: space-around;
-  width: 35%;
+  width: 400px;
   height: 100%;
 
   li {

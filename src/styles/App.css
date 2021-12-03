@@ -15,6 +15,10 @@ li {
   list-style: none;
 }
 
+.none {
+  display: none;
+}
+
 .navbar-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +33,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #080808;
+  background-color: #080808f8;
   height: 10vh;
   width: 100%;
   padding: 0 25px;
@@ -38,13 +42,8 @@ li {
   position: sticky;
   top: 0;
   z-index: 10;
-}
-
-@media screen and (max-width: 830px) {
-  .navbar-container {
-    -webkit-transition: 0.8s all ease;
-    transition: 0.8s all ease;
-  }
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .logo {
@@ -69,7 +68,7 @@ li {
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 35%;
+  width: 400px;
   height: 100%;
 }
 
@@ -215,8 +214,8 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.8s all ease-in-out;
-  transition: 0.8s all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .close-icon {
@@ -273,5 +272,9 @@ li {
 .sidebar-sign-in-up li {
   width: 200px;
   height: 45px;
+}
+
+.sidebar-logo {
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=App.css.map */
