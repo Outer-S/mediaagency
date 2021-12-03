@@ -9,7 +9,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  transition: 0.5s all ease-in-out;
+  animation: slideSideBar 1s ease-in-out;
+  transition: 1s all ease;
 }
 
 .close-icon {
@@ -19,7 +20,6 @@
   right: 0;
   padding: 21px;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 
 .sidebar-menu {
@@ -34,8 +34,9 @@
   a {
     font-size: 1.4rem;
     &:hover {
-      color: #1877f2;
+      color: #fc6a03;
     }
+    transition: 0.5s all ease-in-out;
   }
 }
 
@@ -53,4 +54,15 @@
 
 .sidebar-logo {
   font-size: 2.5rem;
+}
+
+@keyframes slideSideBar {
+  0% {
+    right: -500px;
+    top: 0;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
 }

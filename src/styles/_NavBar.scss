@@ -4,7 +4,8 @@
 $white: #ffffff;
 $black: #080808;
 $agencyblue: #1877f2;
-$catalinablue: #294874;
+$orange: #fc3d03;
+$orangina: #fc6a03;
 
 // Flex direction : row
 @mixin flexrow {
@@ -15,16 +16,17 @@ $catalinablue: #294874;
 
 .navbar-container {
   @include flexrow();
+  position: fixed;
   justify-content: space-between;
-  background-color: #080808f8;
+  background-color: $black;
   height: 10vh;
   width: 100%;
   padding: 0 25px;
   font-size: 1rem;
-  position: sticky;
   top: 0;
   z-index: 10;
-  transition: 0.5s all ease-in-out;
+  animation: slideNavBar 1s ease-in-out;
+  transition: 1s all ease;
   @media screen and (max-width: 830px) {
   }
 }
@@ -51,7 +53,7 @@ $catalinablue: #294874;
     // change hover to active later
     &:hover {
       font-weight: bolder;
-      border-bottom: 5px solid $agencyblue;
+      border-bottom: 5px solid $orangina;
     }
     //
   }
@@ -80,23 +82,23 @@ $catalinablue: #294874;
       color: $black;
     }
     &:hover {
-      background-color: $agencyblue;
+      background-color: $black;
       a {
         color: $white;
       }
-      transition: 0.8s all ease;
+      transition: 0.5s all ease;
     }
   }
 
   #sign-in {
-    background-color: $catalinablue;
+    background-color: $orange;
     a {
       color: white;
     }
 
     &:hover {
-      background-color: $agencyblue;
-      transition: 0.8s all ease;
+      background-color: $black;
+      transition: 0.5s all ease;
     }
   }
 
@@ -120,5 +122,14 @@ $catalinablue: #294874;
     &:active {
       background-color: #47464634;
     }
+  }
+}
+
+@keyframes slideNavBar {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 20;
   }
 }

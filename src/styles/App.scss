@@ -8,6 +8,7 @@
 a {
   text-decoration: none;
   color: white;
+  transition: 0.2s all ease-in-out;
 }
 
 li {
@@ -21,3 +22,4 @@ li {
 @import "_Variables.scss";
 @import "_NavBar.scss";
 @import "_SideBarMenu.scss";
+@import "_HeroSection.scss";

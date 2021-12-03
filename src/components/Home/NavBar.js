@@ -14,9 +14,7 @@ export default function NavBar() {
     <>
       <nav className={open ? "sidebar-container" : "navbar-container"}>
         {/* lOGO */}
-        <h1 className={open ? "logo sidebar-logo" : "logo sidebar-logo"}>
-          AGENCY
-        </h1>
+        <h1 className={open ? "logo sidebar-logo" : "logo"}>AGENCY</h1>
 
         <figure
           className={open ? "close-icon" : "none"}

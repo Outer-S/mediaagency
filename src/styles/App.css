@@ -9,6 +9,8 @@
 a {
   text-decoration: none;
   color: white;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 li {
@@ -30,20 +32,21 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #080808f8;
+  background-color: #080808;
   height: 10vh;
   width: 100%;
   padding: 0 25px;
   font-size: 1rem;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   z-index: 10;
-  -webkit-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
+  -webkit-animation: slideNavBar 1s ease-in-out;
+          animation: slideNavBar 1s ease-in-out;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 .logo {
@@ -84,7 +87,7 @@ li {
 
 .nav-menu li:hover {
   font-weight: bolder;
-  border-bottom: 5px solid #1877f2;
+  border-bottom: 5px solid #fc6a03;
 }
 
 @media screen and (max-width: 830px) {
@@ -136,9 +139,9 @@ li {
 
 .sign-in-up li:hover,
 .sidebar-sign-in-up li:hover {
-  background-color: #1877f2;
-  -webkit-transition: 0.8s all ease;
-  transition: 0.8s all ease;
+  background-color: #080808;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 
 .sign-in-up li:hover a,
@@ -148,7 +151,7 @@ li {
 
 .sign-in-up #sign-in,
 .sidebar-sign-in-up #sign-in {
-  background-color: #294874;
+  background-color: #fc3d03;
 }
 
 .sign-in-up #sign-in a,
@@ -158,9 +161,9 @@ li {
 
 .sign-in-up #sign-in:hover,
 .sidebar-sign-in-up #sign-in:hover {
-  background-color: #1877f2;
-  -webkit-transition: 0.8s all ease;
-  transition: 0.8s all ease;
+  background-color: #080808;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 
 @media screen and (max-width: 830px) {
@@ -195,6 +198,24 @@ li {
   }
 }
 
+@-webkit-keyframes slideNavBar {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 20;
+  }
+}
+
+@keyframes slideNavBar {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 20;
+  }
+}
+
 .sidebar-container {
   position: fixed;
   z-index: 999;
@@ -214,8 +235,10 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
+  -webkit-animation: slideSideBar 1s ease-in-out;
+          animation: slideSideBar 1s ease-in-out;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 .close-icon {
@@ -225,8 +248,6 @@ li {
   right: 0;
   padding: 21px;
   cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 .sidebar-menu {
@@ -250,10 +271,12 @@ li {
 
 .sidebar-menu a {
   font-size: 1.4rem;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .sidebar-menu a:hover {
-  color: #1877f2;
+  color: #fc6a03;
 }
 
 .sidebar-sign-in-up {
@@ -276,5 +299,27 @@ li {
 
 .sidebar-logo {
   font-size: 2.5rem;
+}
+
+@-webkit-keyframes slideSideBar {
+  0% {
+    right: -500px;
+    top: 0;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
+
+@keyframes slideSideBar {
+  0% {
+    right: -500px;
+    top: 0;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
 }
 /*# sourceMappingURL=App.css.map */
