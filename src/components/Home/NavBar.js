@@ -5,9 +5,9 @@ import { IoMdClose } from "react-icons/io";
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
+  /* handles opening and closing the navbar in mobile view*/ 
   const handleOpenClose = () => {
     setOpen(!open);
-    console.log("HandleOpenClose is working");
   };
 
   return (

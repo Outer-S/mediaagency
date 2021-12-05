@@ -1,12 +1,13 @@
 import React from "react";
-import HeroSection from "../components/Home/HeroSection";
-import NavBar from "../components/Home/NavBar";
+import {HomeComponents} from "../components";
+
 
 export default function Home() {
   return (
     <div className="Home">
-      <NavBar />
-      <HeroSection />
+      <HomeComponents.NavBar/>
+      <HomeComponents.HeroSection />
+      <HomeComponents.DiscoverSection/>
     </div>
   );
 }

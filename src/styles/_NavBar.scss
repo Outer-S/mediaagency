@@ -1,11 +1,7 @@
 // mixin attributes
 
 // Color Variables
-$white: #ffffff;
-$black: #080808;
-$agencyblue: #1877f2;
-$orange: #710193e7;
-$orangina: #af69ef;
+
 
 // Flex direction : row
 @mixin flexrow {
@@ -35,6 +31,7 @@ $orangina: #af69ef;
   color: $white;
   cursor: pointer;
   font-size: 1.5rem;
+  width: 25%;
   font-weight: bold;
   text-decoration: none;
 }
@@ -42,17 +39,32 @@ $orangina: #af69ef;
 .nav-menu {
   @include flexrow();
   text-align: center;
-  justify-content: space-around;
-  width: 400px;
+  justify-content: center;
+  width: 50%;
   height: 100%;
 
   li {
     height: 100%;
+    width: 19%;
+    max-width: 120px;
+    min-width: 80px;
+    
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    font-weight: bold; 
     // change hover to active later
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
     &:hover {
-      font-weight: bolder;
       border-bottom: 5px solid $orange;
     }
     //
@@ -66,12 +78,17 @@ $orangina: #af69ef;
 .sign-in-up,
 .sidebar-sign-in-up {
   @include flexrow();
-  justify-content: space-between;
-  width: 220px;
+  justify-content: center;
+  width: 25%;
 
   li {
-    width: 100px;
+    width: 35%;
+    max-width: 130px;
+    min-width: 100px;
     height: 35px;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +96,13 @@ $orangina: #af69ef;
     cursor: pointer;
     background-color: $white;
     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: $black;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
     }
     &:hover {
       background-color: $black;
