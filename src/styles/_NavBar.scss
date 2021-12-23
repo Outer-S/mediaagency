@@ -2,7 +2,6 @@
 
 // Color Variables
 
-
 // Flex direction : row
 @mixin flexrow {
   display: flex;
@@ -23,7 +22,7 @@
   z-index: 10;
   animation: slideNavBar 1s ease-in-out;
   transition: 1s all ease;
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 880px) {
   }
 }
 
@@ -31,7 +30,7 @@
   color: $white;
   cursor: pointer;
   font-size: 1.5rem;
-  width: 25%;
+  width: 100px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -40,7 +39,7 @@
   @include flexrow();
   text-align: center;
   justify-content: center;
-  width: 50%;
+  width: 250px;
   height: 100%;
 
   li {
@@ -48,16 +47,16 @@
     width: 19%;
     max-width: 120px;
     min-width: 80px;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
     margin-left: 1rem;
-    font-weight: bold; 
+    font-weight: bold;
     // change hover to active later
-    a{
+    a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -70,7 +69,7 @@
     //
   }
 
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 880px) {
     display: none;
   }
 }
@@ -79,16 +78,14 @@
 .sidebar-sign-in-up {
   @include flexrow();
   justify-content: center;
-  width: 25%;
+  width: 250px;
 
   li {
-    width: 35%;
-    max-width: 130px;
-    min-width: 100px;
+    width: 250px;
     height: 35px;
-    margin-left: 2rem;
+    margin-left: 0.8rem;
     font-size: 0.8rem;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +122,7 @@
     }
   }
 
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 880px) {
     display: none;
   }
 }
@@ -133,7 +130,7 @@
 .mobile-icon {
   display: none;
 
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 880px) {
     display: flex;
     align-items: center;
     justify-content: center;

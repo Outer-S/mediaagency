@@ -7,15 +7,15 @@ import image3 from "../../assets/images/discoverimage3.jpg";
 
 import "swiper/swiper-bundle.css";
 
-function DiscoverSection() {
+function Services() {
   return (
     <section id="discover-section">
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={1}
         centerInsufficientSlides={true}
-        effect="flip"
+        effect="coverflow"
         direction="horizontal"
         navigation={(true, {})}
         pagination={{ clickable: true }}
@@ -25,15 +25,15 @@ function DiscoverSection() {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide className="slides-discover">
-          <img loading="lazy" src={image1} alt="image1"></img>
+          {/* <img loading="lazy" src={image1} alt="image1"></img> */}
           <h3>Hello</h3>
         </SwiperSlide>
         <SwiperSlide className="slides-discover">
-          <img loading="lazy" src={image2} alt="image2"></img>
+          {/* <img loading="lazy" src={image2} alt="image2"></img> */}
           <h3>Hello</h3>
         </SwiperSlide>
         <SwiperSlide className="slides-discover">
-          <img loading="lazy" src={image3} alt="image3"></img>
+          {/* <img loading="lazy" src={image3} alt="image3"></img> */}
           <h3>Hello</h3>
         </SwiperSlide>
       </Swiper>
@@ -41,4 +41,4 @@ function DiscoverSection() {
   );
 }
 
-export default DiscoverSection;
+export default Services;

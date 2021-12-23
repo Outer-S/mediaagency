@@ -1,0 +1,104 @@
+// mixin flex row
+@mixin flexRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// mixin flex column
+@mixin flexColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-inline: 2rem;
+  flex: 2 1 20rem;
+  height: 75vh;
+}
+
+// mixin fonts h1, p and button for Articles in Discover Section
+@mixin DiscoverFonts {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  color: white;
+  h1 {
+    font-size: 1.7rem;
+    opacity: 0.85;
+  }
+
+  h6 {
+    font-size: 0.7rem;
+    font-weight: 100;
+  }
+
+  p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  button {
+    margin-top: 1rem;
+    background-color: #4b0055;
+    color: white;
+    height: 45px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: #811d79;
+    }
+  }
+
+  &:hover {
+    background-color: #000000;
+  }
+}
+
+//
+//
+// START
+#discover-section {
+  @include flexRow();
+  background-color: #000000;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.article-container {
+  animation: slideArticles 3s ease-in-out;
+  transition: 1s all ease;
+}
+
+.article-about {
+  @include flexColumn();
+  @include DiscoverFonts();
+  background-color: #0a0612;
+}
+
+.article-history {
+  @include flexColumn();
+  @include DiscoverFonts();
+  background-color: #150c25;
+}
+
+.article-mission {
+  @include flexColumn();
+  @include DiscoverFonts();
+  background-color: #1f1137;
+}
+
+@keyframes slideArticles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

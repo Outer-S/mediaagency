@@ -1,13 +1,13 @@
 import React from "react";
-import {HomeComponents} from "../components";
-
+import { HomeComponents } from "../components";
 
 export default function Home() {
   return (
     <div className="Home">
-      <HomeComponents.NavBar/>
+      <HomeComponents.NavBar />
       <HomeComponents.HeroSection />
-      <HomeComponents.DiscoverSection/>
+      <HomeComponents.Discover />
+      <HomeComponents.Services />
     </div>
   );
 }
