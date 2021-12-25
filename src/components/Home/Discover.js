@@ -1,8 +1,21 @@
 import React from "react";
+import Particles from "react-tsparticles";
+import particleConfig from '../../assets/json/particles.json'
 
 function Discover() {
+  const particlesInit = (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
   return (
     <section id="discover-section">
+     <Particles  id="particles" init={particlesInit} loaded={particlesLoaded} params={particleConfig}/>
       <article className="article-about">
         <article className="article-container">
           <h6>ABOUT US</h6>

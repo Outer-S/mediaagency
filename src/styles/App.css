@@ -525,6 +525,15 @@ li {
   margin: auto;
 }
 
+#particles {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .article-container {
   -webkit-animation: slideArticles 3s ease-in-out;
           animation: slideArticles 3s ease-in-out;
@@ -544,19 +553,27 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-inline: 2rem;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 20rem;
-          flex: 2 1 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   height: 75vh;
+  z-index: 2;
+  -webkit-transition: showParticles 0.5s ease-in;
+  transition: showParticles 0.5s ease-in;
   position: relative;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   color: white;
-  background-color: #0a0612;
+  background-color: #1f1137;
+  cursor: pointer;
+}
+
+.article-about:hover {
+  -webkit-animation: showParticles 2s ease;
+          animation: showParticles 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .article-about h1 {
@@ -607,19 +624,26 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-inline: 2rem;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 20rem;
-          flex: 2 1 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   height: 75vh;
+  z-index: 2;
+  -webkit-transition: showParticles 0.5s ease-in;
+  transition: showParticles 0.5s ease-in;
   position: relative;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   color: white;
   background-color: #150c25;
+}
+
+.article-history:hover {
+  -webkit-animation: showParticles 2s ease;
+          animation: showParticles 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .article-history h1 {
@@ -670,19 +694,26 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-inline: 2rem;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 20rem;
-          flex: 2 1 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   height: 75vh;
+  z-index: 2;
+  -webkit-transition: showParticles 0.5s ease-in;
+  transition: showParticles 0.5s ease-in;
   position: relative;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   color: white;
-  background-color: #1f1137;
+  background-color: #0a0612;
+}
+
+.article-mission:hover {
+  -webkit-animation: showParticles 2s ease;
+          animation: showParticles 2s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .article-mission h1 {
@@ -736,6 +767,30 @@ li {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes showParticles {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes showParticles {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
   }
 }
 

@@ -7,7 +7,6 @@ export default function Home() {
       <HomeComponents.NavBar />
       <HomeComponents.HeroSection />
       <HomeComponents.Discover />
-      <HomeComponents.Services />
     </div>
   );
 }

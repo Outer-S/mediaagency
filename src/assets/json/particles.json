@@ -1,0 +1,119 @@
+{
+  "background": {
+    "color": {
+      "value": "#080808"
+    },
+    "opacity": 0.7
+  },
+  "fullScreen": {
+    "enable": false,
+    "zIndex": 1
+  },
+  "fpsLimit": 143,
+  "interactivity": {
+    "events": {
+      "onClick": {
+        "enable": true,
+        "mode": "pull"
+      },
+      "onDiv": {
+        "type": "rectangle"
+      },
+      "onHover": {
+        "enable": false,
+        "mode": "repulse",
+        "parallax": {
+          "smooth": 5
+        }
+      }
+    }
+  },
+  "motion": {
+    "disable": true,
+    "reduce": {
+      "factor": 0.5,
+      "value": false
+    }
+  },
+  "particles": {
+    "bounce": {
+      "horizontal": {
+        "random": {
+          "enable": true
+        },
+        "value": {
+          "min": 0.1,
+          "max": 1
+        }
+      }
+    },
+    "collisions": {
+      "bounce": {
+        "horizontal": {
+          "random": {
+            "enable": true
+          },
+          "value": {
+            "min": 0.1,
+            "max": 1
+          }
+        }
+      }
+    },
+    "color": {
+      "value": "#fefefe",
+      "animation": {
+        "h": {
+          "speed": 20
+        }
+      }
+    },
+    "links": {
+      "color": {
+        "value": "#ba86dd"
+      },
+      "enable": true,
+      "opacity": 0.4
+    },
+    "move": {
+      "attract": {
+        "distance": 500
+      },
+      "enable": true,
+      "path": {},
+      "outModes": {
+        "bottom": "out",
+        "left": "out",
+        "right": "out",
+        "top": "out"
+      },
+      "speed": 6,
+      "spin": {}
+    },
+    "number": {
+      "density": {
+        "enable": true
+      },
+      "value": 80
+    },
+    "opacity": {
+      "value": 0.5,
+      "animation": {}
+    },
+    "reduceDuplicates": true,
+    "shape": {
+      "type": "square"
+    },
+    "size": {
+      "value": {
+        "min": 0.1,
+        "max": 3
+      },
+      "animation": {}
+    },
+    "stroke": {
+      "width": 2
+    }
+  },
+  "zLayers": 1
+}
