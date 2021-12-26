@@ -15,12 +15,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: 5rem 1rem;
+  width: 30%;
+  border-radius: 2rem;
+  padding: 0 5%;
   height: 75vh;
   z-index: 2;
-  transition: showParticles 0.5s ease-in;
   &:hover{
-    animation: showParticles 2s ease;
+    animation: showParticles 0.75s ease-in-out;
     animation-fill-mode:forwards;
   }
 }
@@ -123,10 +125,16 @@
   0% {
     opacity: 1;
   }
-  50%{
+  25%{
     opacity: 0.8;
   }
+  50%{
+    opacity: 0.6;
+  }
+  75%{
+    opacity: 0.6;
+  }
   100% {
-    opacity: 0.4;
+    opacity: 0.55;
   }
 }

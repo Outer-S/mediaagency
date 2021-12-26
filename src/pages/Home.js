@@ -3,10 +3,11 @@ import { HomeComponents } from "../components";
 
 export default function Home() {
   return (
-    <div className="Home">
+    <section className="Home">
       <HomeComponents.NavBar />
       <HomeComponents.HeroSection />
       <HomeComponents.Discover />
-    </div>
+      <HomeComponents.Services />
+    </section>
   );
 }

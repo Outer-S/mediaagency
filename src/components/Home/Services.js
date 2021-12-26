@@ -1,6 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
-import { Pagination, Navigation, Scrollbar, A11y } from "swiper";
 import image1 from "../../assets/images/discoverimage1.jpg";
 import image2 from "../../assets/images/discoverimage2.jpg";
 import image3 from "../../assets/images/discoverimage3.jpg";
@@ -9,34 +7,41 @@ import "swiper/swiper-bundle.css";
 
 function Services() {
   return (
-    <section id="discover-section">
-      <Swiper
-        modules={[Pagination, Navigation, Scrollbar, A11y]}
-        spaceBetween={0}
-        slidesPerView={1}
-        centerInsufficientSlides={true}
-        effect="coverflow"
-        direction="horizontal"
-        navigation={(true, {})}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        id="Swiper-discover"
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide className="slides-discover">
-          {/* <img loading="lazy" src={image1} alt="image1"></img> */}
-          <h3>Hello</h3>
-        </SwiperSlide>
-        <SwiperSlide className="slides-discover">
-          {/* <img loading="lazy" src={image2} alt="image2"></img> */}
-          <h3>Hello</h3>
-        </SwiperSlide>
-        <SwiperSlide className="slides-discover">
-          {/* <img loading="lazy" src={image3} alt="image3"></img> */}
-          <h3>Hello</h3>
-        </SwiperSlide>
-      </Swiper>
+    <section id="service-section">
+      <article id="first-service">
+        <div className="service-img-holder">
+          <img src={image1} />
+        </div>
+        <div className="service-content-holder">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae provident eum praesentium recusandae quod repellendus quos molestiae mollitia ea dolores!
+          </p>
+        </div>
+      </article>
+      <article id="second-service">
+        <div className="service-img-holder">
+          <img src={image2} />
+        </div>
+        <div className="service-content-holder">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae provident eum praesentium recusandae quod repellendus quos molestiae mollitia ea dolores!
+          </p>
+        </div>
+      </article>
+      <article id="third-service">
+        <div className="service-img-holder">
+          <img src={image3} />
+        </div>
+        <div className="service-content-holder">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Repudiandae provident eum praesentium recusandae quod repellendus quos molestiae mollitia ea dolores!
+          </p>
+        </div>
+      </article>
     </section>
   );
 }
